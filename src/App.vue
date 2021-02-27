@@ -3,4 +3,12 @@
 </template>
 
 <style>
+:root {
+  --color: #345;
+  --accent-color: #e80;
+  --primary-color: #87f;
+  --secondary-color: #65d;
+  --basic-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.2);
+  --basic-shadow--light: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.1);
+}
 </style>
