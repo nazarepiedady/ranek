@@ -19,4 +19,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  color: var(--color);
+  font-family: sans-serif;
+}
 </style>
