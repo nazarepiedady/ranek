@@ -11,4 +11,12 @@
   --basic-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.2);
   --basic-shadow--light: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.1);
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
