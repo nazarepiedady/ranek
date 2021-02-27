@@ -32,4 +32,8 @@ body {
   background-repeat: repeat;
   background-image: url("./assets/pattern.svg");
 }
+
+ul {
+  list-style-type: none;
+}
 </style>
