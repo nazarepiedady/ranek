@@ -25,4 +25,11 @@ html {
   color: var(--color);
   font-family: sans-serif;
 }
+
+body {
+  font-size: 1.6rem;
+  background-position: top;
+  background-repeat: repeat;
+  background-image: url("./assets/pattern.svg");
+}
 </style>
