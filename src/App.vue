@@ -36,4 +36,9 @@ body {
 ul {
   list-style-type: none;
 }
+
+a {
+  color: var(--color);
+  text-decoration: none;
+}
 </style>
