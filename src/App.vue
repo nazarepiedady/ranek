@@ -97,4 +97,10 @@ textarea:focus {
   transform: none;
   background-color: var(--primary-color);
 }
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 </style>
