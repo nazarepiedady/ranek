@@ -68,4 +68,33 @@ textarea:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0.6rem 1.2rem rgba(30, 60, 90, 0.2);
 }
+
+.button {
+  border: 0;
+  display: block;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-family: inherit;
+  transition: all 0.3s;
+  border-radius: 0.4rem;
+  color: var(--color-white);
+  box-shadow: var(--basic-shadow);
+  background-color: var(--primary-color);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.button:disabled:hover {
+  transform: none;
+  background-color: var(--primary-color);
+}
 </style>
