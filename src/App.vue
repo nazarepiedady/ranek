@@ -41,4 +41,9 @@ a {
   color: var(--color);
   text-decoration: none;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
 </style>
