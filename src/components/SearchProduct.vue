@@ -47,4 +47,9 @@ export default {
   width: 100%;
   padding: 2rem;
 }
+
+.search__input:focus,
+.search__input:hover {
+  transform: scale(1.1);
+}
 </style>
