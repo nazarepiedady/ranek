@@ -68,4 +68,9 @@ export default {
   background-color: transparent;
   background-image: url("../assets/search.svg");
 }
+
+.search__input:focus + .search__button,
+.search__input:hover + .search__button {
+  transform: translate3d(2.8rem, 0, 0);
+}
 </style>
