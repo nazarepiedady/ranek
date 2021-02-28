@@ -21,10 +21,16 @@
 
 <script>
 export default {
+  name: "SearchProduct",
   data() {
     return {
       search: "",
     };
+  },
+  methods: {
+    searchProduct() {
+      this.$router.push({ query: { q: this.search } });
+    },
   },
 };
 </script>
