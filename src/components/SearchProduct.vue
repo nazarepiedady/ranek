@@ -52,4 +52,20 @@ export default {
 .search__input:hover {
   transform: scale(1.1);
 }
+
+.search__button {
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -15rem;
+  transition: all 0.3s;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../assets/search.svg");
+}
 </style>
