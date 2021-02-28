@@ -41,4 +41,10 @@ export default {
   position: relative;
   margin: 3rem auto 6rem;
 }
+
+.search__input {
+  border: 0;
+  width: 100%;
+  padding: 2rem;
+}
 </style>
