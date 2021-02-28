@@ -5,9 +5,13 @@
         <img src="@/assets/ranek.svg" alt="Ranek Logo" class="logo__img" />
       </router-link>
 
-      <router-link to="/user" class="button">{{ name }}</router-link>
+      <router-link v-if="login" to="/user" class="button">
+        {{ name }}
+      </router-link>
 
-      <router-link to="/login" class="button">Vender / Login</router-link>
+      <router-link v-else to="/login" class="button">
+        Vender / Login
+      </router-link>
     </nav>
   </header>
 </template>
