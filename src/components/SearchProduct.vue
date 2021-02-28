@@ -36,4 +36,9 @@ export default {
 </script>
 
 <style>
+.search {
+  max-width: 60rem;
+  position: relative;
+  margin: 3rem auto 6rem;
+}
 </style>
