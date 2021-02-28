@@ -31,4 +31,19 @@ export default {
 </script>
 
 <style>
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+  box-shadow: var(--basic-shadow);
+}
+
+.logo {
+  padding: 1rem 0;
+}
+
+.logo__img {
+  width: 9rem;
+}
 </style>
