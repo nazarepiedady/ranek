@@ -1,7 +1,13 @@
-<template></template>
+<template>
+  <footer class="footer">
+    <p>Ranek &copy; - Alguns direitos reservados.</p>
+  </footer>
+</template>
 
 <script>
-export default {};
+export default {
+  name: "Footer",
+};
 </script>
 
 <style>
