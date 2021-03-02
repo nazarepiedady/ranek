@@ -14,4 +14,17 @@ export default {
 </script>
 
 <style>
+.loading {
+  text-align: center;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.4rem;
+  border-radius: 1rem;
+  display: inline-block;
+  background-color: var(--primary-color);
+  animation: waves 0.6s cubic-bezier(0.6, 0.1, 1, 0.4) infinite alternate;
+}
 </style>
