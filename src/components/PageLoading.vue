@@ -27,4 +27,20 @@ export default {
   background-color: var(--primary-color);
   animation: waves 0.6s cubic-bezier(0.6, 0.1, 1, 0.4) infinite alternate;
 }
+
+.c1 {
+  animation-delay: 0.1s;
+}
+
+.c2 {
+  animation-delay: 0.2s;
+}
+
+.c3 {
+  animation-delay: 0.3s;
+}
+
+.c4 {
+  animation-delay: 0.4s;
+}
 </style>
