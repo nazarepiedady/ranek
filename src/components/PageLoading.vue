@@ -43,4 +43,13 @@ export default {
 .c4 {
   animation-delay: 0.4s;
 }
+
+@keyframes waves {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 3rem, 0);
+  }
+}
 </style>
