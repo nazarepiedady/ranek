@@ -1,5 +1,5 @@
 <template>
-  <form class="form">
+  <form class="form" v-if="showLoginFields">
     <div class="user">
       <label for="name">Nome</label>
       <input type="text" id="name" name="name" />
@@ -17,7 +17,21 @@
 </template>
 
 <script>
-export default {};
+import { mapFields } from "@/helpers.js";
+
+export default {
+  name: "UserForm",
+  computed: {
+    ...mapFields({
+      fields: ["name", "email", "password", "country"],
+      base: "user",
+      mutation: "UPDATE_USER",
+    }),
+    showLoginFields() {
+      return !this.$store.state.login || this.$route.name === "UserEdit";
+    },
+  },
+};
 </script>
 
 <style>
