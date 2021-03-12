@@ -24,6 +24,9 @@ export default new Vuex.Store({
     },
     UPDATE_USER_PRODUCTS(state, payload) {
       state.user_products = payload;
+    },
+    ADD_USER_PRODUCT(state, payload) {
+      state.user_products.unshift(payload);
     }
   },
   actions: {
