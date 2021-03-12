@@ -50,6 +50,12 @@ export default new Vuex.Store({
         country: ''
       });
       context.commit('UPDATE_LOGIN', false);
+    },
+    getUserProducts(context) {
+      api.get(`/product?user_id=${context.state.user.id}`)
+        .then(response => {
+          context.commit('UPDATE_USER_PRODUCTS', response.data);
+        });
     }
   },
   modules: {
