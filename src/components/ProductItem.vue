@@ -25,4 +25,21 @@ export default {
 </script>
 
 <style>
+.product {
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 4rem;
+  grid-template-columns: minmax(10rem, 20rem) 1fr;
+}
+
+.product__img {
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.product__info {
+  align-self: end;
+}
 </style>
