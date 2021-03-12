@@ -16,6 +16,9 @@ export default new Vuex.Store({
     user_products: null
   },
   mutations: {
+    UPDATE_LOGIN(state, payload) {
+      state.login = payload;
+    }
   },
   actions: {
   },
