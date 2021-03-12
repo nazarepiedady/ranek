@@ -18,6 +18,9 @@ export default new Vuex.Store({
   mutations: {
     UPDATE_LOGIN(state, payload) {
       state.login = payload;
+    },
+    UPDATE_USER(state, payload) {
+      state.user = Object.assign(state.user, payload);
     }
   },
   actions: {
