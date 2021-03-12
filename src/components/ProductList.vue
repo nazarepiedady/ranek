@@ -90,4 +90,47 @@ export default {
 </script>
 
 <style>
+.product-container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.product-list {
+  margin: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.product {
+  padding: 1rem;
+  transition: all 0.2s;
+  border-radius: 0.4rem;
+  background-color: var(--color-white);
+  box-shadow: var(--basic-shadow--light);
+}
+
+.product:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.6rem 1.2rem rgba(30, 60, 90, 0.2);
+}
+
+.product__img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+}
+
+.product__name {
+  margin-bottom: 1rem;
+}
+
+.product__price {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.no-result {
+  text-align: center;
+}
 </style>
