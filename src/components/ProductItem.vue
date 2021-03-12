@@ -13,7 +13,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "ProductItem",
+  props: ["product"],
+};
 </script>
 
 <style>
