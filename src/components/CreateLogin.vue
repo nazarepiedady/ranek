@@ -39,5 +39,19 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.create-heading {
+  text-align: center;
+  margin: 4rem 0 1rem;
+}
+
+.button {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-button {
+  max-width: 100%;
+}
 </style>
