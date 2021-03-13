@@ -39,6 +39,20 @@ export default {
       }
     },
   },
+  computed: {
+    ...mapState(["user"]),
+    shopping() {
+      return {
+        customer_id: this.user.email,
+        seller_id: this.product.user_id,
+        product: this.product,
+        address: {
+          email: this.user.email,
+          country: this.user.country,
+        },
+      };
+    },
+  },
 };
 </script>
 
