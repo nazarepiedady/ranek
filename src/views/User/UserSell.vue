@@ -44,6 +44,11 @@ export default {
       });
     },
   },
+  watch: {
+    login() {
+      this.getSell();
+    },
+  },
 };
 </script>
 
