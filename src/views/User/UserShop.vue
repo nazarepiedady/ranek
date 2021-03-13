@@ -26,6 +26,14 @@ import ProductItem from "@/components/ProductItem.vue";
 export default {
   name: "UserShop",
   components: { ProductItem },
+  data() {
+    return {
+      shoppingList: null,
+    };
+  },
+  computed: {
+    ...mapState(["user", "login"]),
+  },
 };
 </script>
 
