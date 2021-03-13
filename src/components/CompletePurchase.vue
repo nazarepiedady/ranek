@@ -5,7 +5,14 @@
 </template>
 
 <script>
-export default {};
+//import { mapState } from "vuex";
+//import { api } from "@/services.js";
+//import UserForm from "@/components/UserForm.vue";
+
+export default {
+  name: "CompletePurchase",
+  props: ["product"],
+};
 </script>
 
 <style>
