@@ -5,9 +5,9 @@
 </template>
 
 <script>
-//import { mapState } from "vuex";
-//import { api } from "@/services.js";
-//import UserForm from "@/components/UserForm.vue";
+import { mapState } from "vuex";
+import { api } from "@/services.js";
+import UserForm from "@/components/UserForm.vue";
 
 export default {
   name: "CompletePurchase",
