@@ -19,7 +19,22 @@
 </template>
 
 <script>
-export default {};
+import { api } from "@/services.js";
+
+export default {
+  name: "AddProduct",
+  data() {
+    return {
+      product: {
+        name: "",
+        price: 0,
+        photos: null,
+        sold: "false",
+        description: "",
+      },
+    };
+  },
+};
 </script>
 
 <style>
