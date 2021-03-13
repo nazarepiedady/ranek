@@ -1,7 +1,24 @@
-<template></template>
+<template>
+  <section>
+    <h2>Crie a Sua Conta</h2>
+    <transition mode="out-in">
+      <button v-if="!create" class="button" @click="create = true" key="create">
+        Criar Conta
+      </button>
+      <UserForm v-else key="userForm">
+        <button class="button form-button" @click.prevent="createUser">
+          Criar Usuário
+        </button>
+      </UserForm>
+    </transition>
+  </section>
+</template>
 
 <script>
-export default {};
+import UserForm from "./UserForm.vue";
+export default {
+  components: { UserForm },
+};
 </script>
 
 <style>
