@@ -1,13 +1,21 @@
 <template>
   <section class="home">
     <h1 class="home__heading">👍 Compre ou Venda 👎</h1>
+    <SearchProduct />
+    <ProductList />
   </section>
 </template>
 
 <script>
+import ProductList from "@/components/ProductList.vue";
+import SearchProduct from "@/components/SearchProduct.vue";
+
 export default {
   name: "Home",
-  components: {},
+  components: {
+    ProductList,
+    SearchProduct,
+  },
 };
 </script>
 
