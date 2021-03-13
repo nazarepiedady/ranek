@@ -1,4 +1,12 @@
-<template></template>
+<template>
+  <section>
+    <UserForm>
+      <button class="button" @click.prevent="updateUser">
+        Atualizar Usuário
+      </button>
+    </UserForm>
+  </section>
+</template>
 
 <script>
 export default {};
