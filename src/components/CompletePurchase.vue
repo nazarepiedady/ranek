@@ -29,6 +29,15 @@ export default {
         this.$router.push({ name: "UserShop" });
       });
     },
+    async createUser() {
+      try {
+        await this.$store.dispatch("createUser", this.$store.state.user);
+        await this.$store.dispatch("getUser", this.$store.state.user.email);
+        await this.makeTransition();
+      } catch (e) {
+        console.log(e);
+      }
+    },
   },
 };
 </script>
