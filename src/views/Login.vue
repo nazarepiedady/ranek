@@ -47,5 +47,37 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.form {
+  display: grid;
+}
+
+.login {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 50rem;
+}
+
+.login__heading {
+  margin-top: 4rem;
+  font-size: 3.2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.button {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.forget-password {
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.forget-password a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
 </style>
