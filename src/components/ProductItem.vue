@@ -10,8 +10,8 @@
       <p>Ver Produto</p>
     </router-link>
     <div class="product__info">
-      <p class="product__price"></p>
-      <h2 class="product__name"></h2>
+      <p class="product__price">{{ product.price | toMoney }}</p>
+      <h2 class="product__name">{{ product.name }}</h2>
       <slot></slot>
     </div>
   </div>
