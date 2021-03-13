@@ -48,5 +48,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.add-product {
+  display: grid;
+  align-items: center;
+  margin-bottom: 6rem;
+  grid-template-columns: 10rem 1fr;
+}
+
+.button {
+  grid-column: 2;
+}
 </style>
