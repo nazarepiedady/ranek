@@ -16,6 +16,15 @@ export default {
   name: "CompletePurchase",
   props: ["product"],
   components: { UserForm },
+  methods: {
+    purchase() {
+      if (this.$store.state.login) {
+        this.makeTransition();
+      } else {
+        this.createUser();
+      }
+    },
+  },
 };
 </script>
 
