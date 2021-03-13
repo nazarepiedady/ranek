@@ -1,9 +1,9 @@
 <template>
   <section>
     <h2 class="purchase-heading">Endereço de Envio</h2>
-    <User-Form>
+    <UserForm>
       <button class="button" @click.prevent="purchase">Finalizar Compra</button>
-    </User-Form>
+    </UserForm>
   </section>
 </template>
 
