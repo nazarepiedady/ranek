@@ -49,6 +49,11 @@ export default {
       this.getSell();
     },
   },
+  created() {
+    if (this.login) {
+      this.getSell();
+    }
+  },
 };
 </script>
 
