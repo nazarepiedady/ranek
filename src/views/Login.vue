@@ -38,6 +38,12 @@ export default {
       },
     };
   },
+  methods: {
+    toLogin() {
+      this.$store.dispatch("getUser", this.login.email);
+      this.$route.push({ name: "User" });
+    },
+  },
 };
 </script>
 
