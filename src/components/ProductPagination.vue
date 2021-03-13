@@ -1,4 +1,12 @@
-<template></template>
+<template>
+  <ul v-if="totalPage > 1" class="pagination">
+    <li v-for="page in pages" :key="page" class="pagination__item">
+      <router-link :to="{ query: query(page) }" class="pagination__link">{{
+        page
+      }}</router-link>
+    </li>
+  </ul>
+</template>
 
 <script>
 export default {
