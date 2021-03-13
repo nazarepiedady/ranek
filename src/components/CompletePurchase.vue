@@ -24,6 +24,11 @@ export default {
         this.createUser();
       }
     },
+    makeTransition() {
+      return api.post("/transition", this.shopping).then(() => {
+        this.$router.push({ name: "UserShop" });
+      });
+    },
   },
 };
 </script>
