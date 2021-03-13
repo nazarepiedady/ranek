@@ -22,7 +22,14 @@
 </template>
 
 <script>
-export default {};
+import { mapState } from "vuex";
+import { api } from "@/services.js";
+import ProductItem from "@/components/ProductItem.vue";
+
+export default {
+  name: "UserSell",
+  components: { ProductItem },
+};
 </script>
 
 <style>
