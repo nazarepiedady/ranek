@@ -37,6 +37,13 @@ export default {
   computed: {
     ...mapState(["user", "login"]),
   },
+  methods: {
+    getSell() {
+      api.get(`/transition?seller_id=${this.user.id}`).then((response) => {
+        this.sellList = response.data;
+      });
+    },
+  },
 };
 </script>
 
