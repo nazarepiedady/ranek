@@ -51,5 +51,29 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.product {
+  display: grid;
+  margin: 0 auto;
+  gap: 3rem;
+  max-width: 90rem;
+  padding: 6rem 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product__price {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  color: var(--accent-color);
+}
+
+.product__description {
+  font-size: 1.92rem;
+}
+
+.button {
+  width: 20rem;
+  margin-top: 6rem;
+}
 </style>
