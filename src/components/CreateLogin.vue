@@ -25,6 +25,17 @@ export default {
     };
   },
   components: { UserForm },
+  methods: {
+    async createUser() {
+      try {
+        await this.$store.dispatch("createUser", this.$store.state.user);
+        await this.$store.dispatch("getUser", this.$store.state.user.email);
+        this.$router.push({ name: "User" });
+      } catch (e) {
+        console.log(e);
+      }
+    },
+  },
 };
 </script>
 
