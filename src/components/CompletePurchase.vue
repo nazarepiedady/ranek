@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .purchase-heading {
   margin: 4rem 0 2rem;
 }
