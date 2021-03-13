@@ -57,5 +57,27 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.product-wrapper {
+  margin-bottom: 4rem;
+}
+
+.seller span {
+  color: var(--accent-color);
+}
+
+.delivery {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 6rem;
+  grid-template-columns: minmax(10rem, 20rem) 1fr;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  justify-self: end;
+}
 </style>
