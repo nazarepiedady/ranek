@@ -38,6 +38,10 @@ export default {
 
       return pagesArray;
     },
+    totalPage() {
+      const total = this.productTotal / this.productPerPage;
+      return total === Infinity ? Math.ceil(total) : 0;
+    },
   },
 };
 </script>
