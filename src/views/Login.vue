@@ -18,11 +18,27 @@
         Perdeu a senha? Clique aqui.
       </a>
     </p>
+    <CreateLogin />
   </section>
 </template>
 
 <script>
-export default {};
+import CreateLogin from "@/components/CreateLogin.vue";
+
+export default {
+  name: "Login",
+  components: {
+    CreateLogin,
+  },
+  data() {
+    return {
+      login: {
+        email: "",
+        passoword: "",
+      },
+    };
+  },
+};
 </script>
 
 <style>
