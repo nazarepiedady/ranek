@@ -34,6 +34,13 @@ export default {
   computed: {
     ...mapState(["user", "login"]),
   },
+  methods: {
+    getShopping() {
+      api.get(`/transition?customer_id=${this.user.id}`).then((response) => {
+        this.shoppingList = response.data;
+      });
+    },
+  },
 };
 </script>
 
