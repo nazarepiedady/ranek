@@ -27,7 +27,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "User",
+  methods: {
+    logout() {
+      this.$store.dispatch("logoutUser");
+      this.$route.push("/login");
+    },
+  },
+};
 </script>
 
 <style>
