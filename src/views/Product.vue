@@ -12,7 +12,7 @@
         <p class="product__price">{{ product.price | toMoney }}</p>
         <p class="product__description">{{ product.description }}</p>
         <transition v-if="product.sold === 'false'" mode="out-in">
-          <button class="button" v-if="!finish" @click="finish = true">
+          <button class="button" v-if="!finished" @click="finished = true">
             Comprar
           </button>
           <CompletePurchase v-else :product="product" />
@@ -25,7 +25,30 @@
 </template>
 
 <script>
-export default {};
+import { api } from "@/services.js";
+import CompletePurchase from "@/components/CompletePurchase.vue";
+
+export default {
+  name: "Product",
+  props: ["id"],
+  components: { CompletePurchase },
+  data() {
+    return {
+      product: null,
+      finished: false,
+    };
+  },
+  methods: {
+    getProduct() {
+      api.get(`/product/${this.id}`).then((response) => {
+        this.product = response.data;
+      });
+    },
+  },
+  created() {
+    this.getProduct();
+  },
+};
 </script>
 
 <style>
