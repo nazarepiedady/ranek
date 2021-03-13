@@ -16,7 +16,14 @@
 
 <script>
 import UserForm from "./UserForm.vue";
+
 export default {
+  name: "CreateLogin",
+  data() {
+    return {
+      create: false,
+    };
+  },
   components: { UserForm },
 };
 </script>
