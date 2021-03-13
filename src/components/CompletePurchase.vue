@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Endereço de Envio</h2>
+    <h2 class="purchase-heading">Endereço de Envio</h2>
     <User-Form>
       <button class="button" @click.prevent="purchase">Finalizar Compra</button>
     </User-Form>
@@ -57,4 +57,11 @@ export default {
 </script>
 
 <style>
+.purchase-heading {
+  margin: 4rem 0 2rem;
+}
+
+.button {
+  background-color: var(--accent-color);
+}
 </style>
