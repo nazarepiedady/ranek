@@ -55,4 +55,23 @@ export default {
 </script>
 
 <style>
+.pagination {
+  grid-column: 1 / -1;
+}
+
+.pagiantion__item {
+  display: inline-block;
+}
+
+.pagination__link {
+  margin: 0.4rem;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.8rem;
+}
+
+.pagination__link:hover,
+.router-link-exact-active {
+  color: var(--color-white);
+  background-color: var(--primary-color);
+}
 </style>
