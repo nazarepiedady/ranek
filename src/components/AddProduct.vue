@@ -34,6 +34,17 @@ export default {
       },
     };
   },
+  methods: {
+    formatProduct() {
+      this.product.user_id = this.$store.state.user.id;
+    },
+    addProduct() {
+      this.formatProduct();
+      api.post("/product", this.product).then(() => {
+        this.$store.dispatch("getUserProducts");
+      });
+    },
+  },
 };
 </script>
 
