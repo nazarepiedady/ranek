@@ -13,6 +13,14 @@ export default {
       default: 1,
     },
   },
+  methods: {
+    query(page) {
+      return {
+        page,
+        ...this.$route.query,
+      };
+    },
+  },
 };
 </script>
 
