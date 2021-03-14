@@ -41,6 +41,16 @@ export default {
       });
     },
   },
+  watch: {
+    login() {
+      this.getShopping();
+    },
+  },
+  created() {
+    if (this.login) {
+      this.getShopping();
+    }
+  },
 };
 </script>
 
