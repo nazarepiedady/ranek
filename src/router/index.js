@@ -27,6 +27,17 @@ const routes = [
     name: 'Product',
     component: Product,
     props: true
+  },
+  {
+    path: '/user',
+    component: User,
+    children: [
+      {
+        path: '',
+        name: 'User',
+        component: UserProduct
+      }
+    ]
   }
 ]
 
