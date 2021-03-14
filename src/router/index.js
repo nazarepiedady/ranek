@@ -21,6 +21,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/product/:id',
+    name: 'Product',
+    component: Product,
+    props: true
   }
 ]
 
