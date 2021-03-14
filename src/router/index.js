@@ -41,6 +41,11 @@ const routes = [
         path: 'edit',
         name: 'UserEdit',
         component: UserEdit
+      },
+      {
+        path: 'shopping',
+        name: 'UserShop',
+        component: UserShop
       }
     ]
   }
