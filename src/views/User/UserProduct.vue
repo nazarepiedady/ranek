@@ -31,6 +31,9 @@ export default {
   computed: {
     ...mapState(["login", "user", "user_products"]),
   },
+  methods: {
+    ...mapActions(["getUserProducts"]),
+  },
 };
 </script>
 
