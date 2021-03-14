@@ -60,5 +60,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h2 {
+  margin-bottom: 2rem;
+}
+
+.list-enter,
+.list-leave-to {
+  opacity: 0;
+  transform: translate3d(2rem, 0, 0);
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.3s;
+}
+
+.delete {
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: 14rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
+  background-image: url("../../assets/remove.svg");
+}
 </style>
