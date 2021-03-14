@@ -33,6 +33,19 @@ export default {
   },
   methods: {
     ...mapActions(["getUserProducts"]),
+    deleteProduct(id) {
+      const toConfirm = window.confirm("Deseja remover este produto?");
+      if (toConfirm) {
+        api
+          .delete(`/product/${id}`)
+          .then(() => {
+            this.getUserProducts();
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
+    },
   },
 };
 </script>
