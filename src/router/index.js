@@ -36,6 +36,11 @@ const routes = [
         path: '',
         name: 'User',
         component: UserProduct
+      },
+      {
+        path: 'edit',
+        name: 'UserEdit',
+        component: UserEdit
       }
     ]
   }
