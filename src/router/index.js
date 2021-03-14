@@ -1,9 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '@/views/Home.vue';
+import Login from '@/views/Login.vue';
+import Product from '@/views/Product.vue';
+import User from '@/views/User.vue';
+import UserProduct from '@/views/User/UserProduct.vue';
+import UserShop from '@/views/User/UserShop.vue';
+import UserSell from '@/views/User/UserSell.vue';
+import UserEdit from '@/views/User/UserEdit.vue';
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  }
 ]
 
 const router = new VueRouter({
