@@ -54,5 +54,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.product-wrapper {
+  margin-bottom: 4rem;
+}
+
+.seller span {
+  color: var(--accent-color);
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
 </style>
