@@ -47,6 +47,16 @@ export default {
       }
     },
   },
+  watch: {
+    login() {
+      this.getUserProducts();
+    },
+  },
+  created() {
+    if (this.login) {
+      this.getUserProducts();
+    }
+  },
 };
 </script>
 
