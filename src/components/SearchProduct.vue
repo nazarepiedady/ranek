@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .search {
   max-width: 60rem;
   position: relative;
@@ -66,6 +66,7 @@ export default {
   transition: all 0.3s;
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center center;
   background-image: url("../assets/search.svg");
 }
 
