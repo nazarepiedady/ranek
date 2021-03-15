@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style scoped>
-.add-product {
+.add-product-form {
   display: grid;
   align-items: center;
   margin-bottom: 6rem;
