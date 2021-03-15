@@ -1,8 +1,8 @@
 <template>
   <section>
-    <h2>Adicionar Produtos</h2>
+    <h2 class="user-product-h1">Adicionar Produtos</h2>
     <AddProduct />
-    <h2>Seus Produtos</h2>
+    <h2 class="user-product-h2">Seus Produtos</h2>
     <transition-group v-if="user_products" name="list" tag="ul">
       <li v-for="(product, index) in user_products" :key="index">
         <ProductItem :product="product">
@@ -61,7 +61,12 @@ export default {
 </script>
 
 <style scoped>
-h2 {
+.user-product-h1 {
+  margin-bottom: 2rem;
+}
+
+.user-product-h2 {
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
