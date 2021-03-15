@@ -32,7 +32,7 @@ export default {
   methods: {
     logout() {
       this.$store.dispatch("logoutUser");
-      this.$route.push("/login");
+      this.$router.push("/login");
     },
   },
 };
