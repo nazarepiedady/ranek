@@ -66,6 +66,7 @@ export default {
   transition: all 0.3s;
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center center;
   background-image: url("../assets/search.svg");
 }
 
