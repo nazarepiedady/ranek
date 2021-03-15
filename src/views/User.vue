@@ -55,7 +55,7 @@ export default {
   }
 }
 
-.siddebar a,
+.sidebar a,
 .sidebar button {
   padding: 1rem;
   display: block;
