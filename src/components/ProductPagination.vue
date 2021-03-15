@@ -48,9 +48,8 @@ export default {
     },
     totalPage() {
       const total = this.productTotal / this.productPerPage;
-      console.log(this.$route.query);
       console.log(total);
-      return total === Infinity ? Math.ceil(total) : 0;
+      return total !== Infinity ? Math.ceil(total) : 0;
     },
   },
 };
