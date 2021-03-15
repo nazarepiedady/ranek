@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Crie a Sua Conta</h2>
+    <h2 class="create-heading">Crie a Sua Conta</h2>
     <transition mode="out-in">
       <button v-if="!create" class="button" @click="create = true" key="create">
         Criar Conta
