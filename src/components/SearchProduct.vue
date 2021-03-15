@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .search {
   max-width: 60rem;
   position: relative;

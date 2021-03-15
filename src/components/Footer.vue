@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .footer {
   top: 7.5rem;
   padding: 2.5rem 0;

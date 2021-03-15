@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home__heading {
   margin-top: 4rem;
   font-size: 3.2rem;

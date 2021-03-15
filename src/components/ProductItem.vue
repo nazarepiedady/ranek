@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .product {
   display: grid;
   gap: 2rem;

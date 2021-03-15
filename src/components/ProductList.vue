@@ -45,7 +45,7 @@
 <script>
 import { api } from "@/services.js";
 import { serialize } from "@/helpers.js";
-import ProductPagination from "./PageLoading.vue";
+import ProductPagination from "./ProductPagination.vue";
 
 export default {
   name: "ProductList",
@@ -89,7 +89,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .product-container {
   margin: 0 auto;
   max-width: 100rem;
@@ -99,7 +99,7 @@ export default {
   margin: 3rem;
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .product {

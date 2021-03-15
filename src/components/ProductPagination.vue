@@ -1,9 +1,9 @@
 <template>
   <ul v-if="totalPage > 1" class="pagination">
     <li v-for="page in pages" :key="page" class="pagination__item">
-      <router-link :to="{ query: query(page) }" class="pagination__link">{{
-        page
-      }}</router-link>
+      <router-link :to="{ query: query(page) }" class="pagination__link">
+        {{ page }}
+      </router-link>
     </li>
   </ul>
 </template>
@@ -24,14 +24,14 @@ export default {
   methods: {
     query(page) {
       return {
-        page,
         ...this.$route.query,
+        _page: page,
       };
     },
   },
   computed: {
     pages() {
-      const current = +this.$route.query.page;
+      const current = +this.$route.query._page;
       const range = 9;
       const offset = Math.ceil(range / 2);
       const total = this.totalPage;
@@ -48,18 +48,20 @@ export default {
     },
     totalPage() {
       const total = this.productTotal / this.productPerPage;
+      console.log(this.$route.query);
+      console.log(total);
       return total === Infinity ? Math.ceil(total) : 0;
     },
   },
 };
 </script>
 
-<style>
+<style scoped>
 .pagination {
   grid-column: 1 / -1;
 }
 
-.pagiantion__item {
+.pagination__item {
   display: inline-block;
 }
 
