@@ -1,21 +1,24 @@
-# ranek
+# Ranek
 
-## Project setup
+It is a e-commerce frontend application that provide solution about selling and
+shopping technological products on the web.
+
+## To install the dependencies
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### To serve in the development mode
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### To compile to deploy on production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### To run the lints and fix files
 ```
 npm run lint
 ```
