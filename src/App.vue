@@ -49,9 +49,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-position: top;
-  background-repeat: repeat;
-  background-image: url("./assets/pattern.svg");
 }
 
 ul {
