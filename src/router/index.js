@@ -5,7 +5,7 @@ import Home from '../views/Home.vue';
 //import Product from '../views/Product.vue';
 //import User from '../views/User.vue';
 //import UserProduct from '../views/User/UserProduct.vue';
-import UserShop from '../views/User/UserShop.vue';
+//import UserShop from '../views/User/UserShop.vue';
 import UserSell from '../views/User/UserSell.vue';
 //import UserEdit from '../views/User/UserEdit.vue';
 
@@ -46,7 +46,7 @@ const routes = [
       {
         path: 'shopping',
         name: 'UserShop',
-        component: UserShop
+        component: () => import('@/views/User/UserShop.vue')
       },
       {
         path: 'selling',
