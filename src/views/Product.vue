@@ -13,11 +13,11 @@
         <p class="product__description">{{ product.description }}</p>
         <transition v-if="product.sold === 'false'" mode="out-in">
           <button class="button" v-if="!finished" @click="finished = true">
-            Comprar
+            Buy
           </button>
           <CompletePurchase v-else :product="product" />
         </transition>
-        <button class="button" disabled v-else>Produto vendido</button>
+        <button class="button" disabled v-else>Sold Product</button>
       </div>
     </div>
     <PageLoading v-else />
