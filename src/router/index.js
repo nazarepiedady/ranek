@@ -6,7 +6,7 @@ import Home from '../views/Home.vue';
 //import User from '../views/User.vue';
 //import UserProduct from '../views/User/UserProduct.vue';
 //import UserShop from '../views/User/UserShop.vue';
-import UserSell from '../views/User/UserSell.vue';
+//import UserSell from '../views/User/UserSell.vue';
 //import UserEdit from '../views/User/UserEdit.vue';
 
 Vue.use(VueRouter)
@@ -51,7 +51,7 @@ const routes = [
       {
         path: 'selling',
         name: 'UserSell',
-        component: UserSell
+        component: () => import('@/views/User/UserSell.vue')
       }
     ]
   }
