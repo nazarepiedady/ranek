@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue';
 //import Login from '../views/Login.vue';
-import Product from '../views/Product.vue';
+//import Product from '../views/Product.vue';
 import User from '../views/User.vue';
 import UserProduct from '../views/User/UserProduct.vue';
 import UserShop from '../views/User/UserShop.vue';
@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/product/:id',
     name: 'Product',
-    component: Product,
+    component: () => import('@/views/Product.vue'),
     props: true
   },
   {
