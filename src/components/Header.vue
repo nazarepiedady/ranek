@@ -10,7 +10,7 @@
       </router-link>
 
       <router-link v-else to="/login" class="button">
-        Vender / Login
+        Sell / Login
       </router-link>
     </nav>
   </header>
