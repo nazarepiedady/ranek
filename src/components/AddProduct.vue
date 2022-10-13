@@ -1,19 +1,19 @@
 <template>
   <form class="add-product-form">
-    <label for="name">Nome</label>
+    <label for="name">Name</label>
     <input type="text" id="name" name="name" v-model="product.name" />
-    <label for="price">Preço (USD)</label>
+    <label for="price">Price (USD)</label>
     <input type="number" name="price" id="price" v-model="product.price" />
-    <label for="photos">Fotos</label>
+    <label for="photos">Photos</label>
     <input type="file" id="photos" name="photos" ref="photos" />
-    <label for="description">Descrição</label>
+    <label for="description">Description</label>
     <textarea
       name="description"
       id="description"
       v-model="product.description"
     ></textarea>
     <button class="button" @click.prevent="addProduct">
-      Adicionar Produto
+      Add Product
     </button>
   </form>
 </template>
