@@ -7,7 +7,7 @@ import Home from '../views/Home.vue';
 //import UserProduct from '../views/User/UserProduct.vue';
 import UserShop from '../views/User/UserShop.vue';
 import UserSell from '../views/User/UserSell.vue';
-import UserEdit from '../views/User/UserEdit.vue';
+//import UserEdit from '../views/User/UserEdit.vue';
 
 Vue.use(VueRouter)
 
@@ -41,7 +41,7 @@ const routes = [
       {
         path: 'edit',
         name: 'UserEdit',
-        component: UserEdit
+        component: () => import('@/views/User/UserEdit.vue')
       },
       {
         path: 'shopping',
