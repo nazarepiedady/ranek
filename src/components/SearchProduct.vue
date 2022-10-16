@@ -6,7 +6,7 @@
       type="text"
       v-model="search"
       class="search__input"
-      placeholder="Busca..."
+      placeholder="Search for..."
     />
     <button
       type="submit"
@@ -14,7 +14,7 @@
       @click.prevent="searchProduct"
       class="search__button"
     >
-      Buscar
+      Search
     </button>
   </form>
 </template>
