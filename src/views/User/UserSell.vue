@@ -1,6 +1,6 @@
 <template>
   <div v-if="sellList">
-    <h2>Vendas</h2>
+    <h2>Sales</h2>
     <div class="product-wrapper" v-for="(sell, index) in sellList" :key="index">
       <ProductItem v-if="sell.product" :product="sell.product">
         <p class="seller">
@@ -10,7 +10,7 @@
       </ProductItem>
 
       <div class="delivery">
-        <h3>Entrega:</h3>
+        <h3>Delivery:</h3>
         <ul v-if="sell.address">
           <li v-for="(value, key) in sell.address" :key="key">
             {{ key }}: {{ value }}
