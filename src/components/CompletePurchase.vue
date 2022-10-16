@@ -1,8 +1,12 @@
 <template>
   <section>
-    <h2 class="purchase-heading">Endereço de Envio</h2>
+    <h2 class="purchase-heading">
+      Address to send to
+    </h2>
     <UserForm>
-      <button class="button" @click.prevent="purchase">Finalizar Compra</button>
+      <button class="button" @click.prevent="purchase">
+        Purchase
+      </button>
     </UserForm>
   </section>
 </template>
