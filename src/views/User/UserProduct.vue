@@ -1,14 +1,14 @@
 <template>
   <section>
-    <h2 class="user-product-h1">Adicionar Produtos</h2>
+    <h2 class="user-product-h1">Add Products</h2>
     <AddProduct />
-    <h2 class="user-product-h2">Seus Produtos</h2>
+    <h2 class="user-product-h2">Your Products</h2>
     <transition-group v-if="user_products" name="list" tag="ul">
       <li v-for="(product, index) in user_products" :key="index">
         <ProductItem :product="product">
           <p>{{ product.description }}</p>
           <button class="delete" @click.prevent="deleteProduct(product.id)">
-            Deletar
+            Delete
           </button>
         </ProductItem>
       </li>
