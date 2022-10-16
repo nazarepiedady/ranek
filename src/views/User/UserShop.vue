@@ -1,7 +1,7 @@
 <template>
   <section>
     <div v-if="shoppingList">
-      <h2>Compras</h2>
+      <h2>Shopping</h2>
       <div
         class="product-wrapper"
         v-for="(shopping, index) in shoppingList"
@@ -9,7 +9,7 @@
       >
         <ProductItem v-if="shopping.product" :product="shopping.product">
           <p class="seller">
-            <span>Vendedor:</span>
+            <span>Seller:</span>
             {{ shopping.seller_id }}
           </p>
         </ProductItem>
