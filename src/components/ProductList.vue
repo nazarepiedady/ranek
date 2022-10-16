@@ -34,7 +34,7 @@
         key="no-result"
       >
         <p class="no-result">
-          Não há resultado. Tente procurar por outro termo.
+          No result. Please try to search for another term.
         </p>
       </div>
       <PageLoading key="pageLoading" v-else />
