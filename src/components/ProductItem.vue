@@ -7,7 +7,7 @@
         :alt="product.photos[0].name"
         class="product__img"
       />
-      <p>Ver Produto</p>
+      <p>See the Product</p>
     </router-link>
     <div class="product__info">
       <p class="product__price">{{ product.price | toMoney }}</p>
