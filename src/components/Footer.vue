@@ -13,7 +13,7 @@ export default {
 <style scoped>
 .footer {
   top: 7.5rem;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   position: relative;
   text-align: center;
   font-size: 1.92rem;
