@@ -4,7 +4,7 @@
     <AddProduct />
     <h2 class="user-product-h2">Your Products</h2>
     <transition-group v-if="user_products" name="list" tag="ul">
-      <li v-for="(product, index) in user_products" :key="index">
+      <li v-for="product in user_products" :key="product.id">
         <ProductItem :product="product">
           <p>{{ product.description }}</p>
           <button class="delete" @click.prevent="deleteProduct(product.id)">
