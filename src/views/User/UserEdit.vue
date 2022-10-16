@@ -2,7 +2,7 @@
   <section>
     <UserForm>
       <button class="button" @click.prevent="updateUser">
-        Atualizar Usuário
+        Update User
       </button>
     </UserForm>
   </section>
