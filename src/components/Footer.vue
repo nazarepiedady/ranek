@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p>Ranek &copy; - Alguns direitos reservados.</p>
+    <p>Ranek &copy; - Some rights reserved.</p>
   </footer>
 </template>
 
