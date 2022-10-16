@@ -1,13 +1,13 @@
 <template>
   <section>
-    <h2 class="create-heading">Crie a Sua Conta</h2>
+    <h2 class="create-heading">Create Your Account</h2>
     <transition mode="out-in">
       <button v-if="!create" class="button" @click="create = true" key="create">
-        Criar Conta
+        Create the Account
       </button>
       <UserForm v-else key="userForm">
         <button class="button form-button" @click.prevent="createUser">
-          Criar Usuário
+          Create the User
         </button>
       </UserForm>
     </transition>
