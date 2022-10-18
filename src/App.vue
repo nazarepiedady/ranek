@@ -115,6 +115,12 @@ textarea:focus {
   background-color: var(--primary-color);
 }
 
+@media screen and (max-width: 800px) {
+  .button:hover {
+    transform: none;
+  }
+}
+
 #app {
   display: flex;
   min-height: 100vh;
