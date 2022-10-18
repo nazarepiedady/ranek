@@ -3,7 +3,12 @@
     <h1 class="login__heading">Login</h1>
     <form class="form">
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" v-model="login.email" />
+      <input 
+        type="email"
+        name="email"
+        id="email"
+        v-model="login.email" />
+
       <label for="password">Password</label>
       <input
         type="password"
@@ -11,10 +16,17 @@
         id="password"
         v-model="login.password"
       />
-      <button class="button" @click.prevent="toLogin">Login</button>
+
+      <button class="button form__button" @click.prevent="toLogin">
+        Login your Account
+      </button>
     </form>
+    
     <p class="forget-password">
-      <a href="/" target="_blank" rel="noreferrer noopener">
+      <a
+        class="forget-password__link"
+        href="/" target="_blank"
+        rel="noreferrer noopener">
         Do you lost your password?
       </a>
     </p>
@@ -65,10 +77,9 @@ export default {
   color: var(--primary-color);
 }
 
-.button {
+.form__button {
   width: 100%;
   margin: 0 auto;
-  max-width: 30rem;
 }
 
 .forget-password {
@@ -76,7 +87,7 @@ export default {
   margin: 2rem auto 0;
 }
 
-.forget-password a:hover {
+.forget-password__link:hover {
   text-decoration: underline;
   color: var(--primary-color);
 }
