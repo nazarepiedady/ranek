@@ -5,11 +5,11 @@
         <img src="@/assets/ranek.svg" alt="Ranek Logo" class="logo__img" />
       </router-link>
 
-      <router-link v-if="login" to="/user" class="button">
+      <router-link v-if="login" to="/user" class="button navigation__button">
         {{ name }}
       </router-link>
 
-      <router-link v-else to="/login" class="button">
+      <router-link v-else to="/login" class="button navigation__button">
         Sell / Login
       </router-link>
     </nav>
@@ -33,6 +33,7 @@ export default {
 <style scoped>
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 1.5rem 2rem;
   justify-content: space-between;
@@ -45,5 +46,12 @@ export default {
 
 .logo__img {
   width: 9rem;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation__button {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  } 
 }
 </style>
