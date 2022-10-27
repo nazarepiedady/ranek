@@ -80,4 +80,16 @@ export default {
 .search__input:hover + .search__button {
   transform: translate3d(2.8rem, 0, 0);
 }
+
+@media screen and (max-width: 900px) {
+  .search__input:focus,
+  .search__input:hover {
+    transform: none;
+  }
+
+  .search__input:focus + .search__button,
+  .search__input:hover + .search__button {
+    transform: none;
+  }
+}
 </style>
