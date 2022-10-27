@@ -1,6 +1,9 @@
 <template>
   <section class="home">
-    <h1 class="home__heading">👍 Search for your product 👎</h1>
+    <h1 v-if="isGoodSize" class="home__heading">
+      👍 Search for your product 👎
+    </h1>
+    <h1 v-else class="home__heading">👍 Search your product 👎</h1>
     <SearchProduct />
     <ProductList />
   </section>
@@ -16,6 +19,17 @@ export default {
     ProductList,
     SearchProduct,
   },
+  data() {
+    return {
+      isGoodSize: false
+    }
+  },
+  beforeMount() {
+    let size = matchMedia('(min-width: 450px)')
+    if (size.matches) {
+      this.isGoodSize = true
+    }
+  }
 };
 </script>
 
@@ -30,6 +44,12 @@ export default {
 @media screen and (max-width: 600px) {
   .home__heading {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .home__heading {
+    font-size: 2rem;
   }
 }
 </style>
