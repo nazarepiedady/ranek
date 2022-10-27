@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p>Ranek &copy; - Some rights reserved.</p>
+    <p class="footer__copyright">Ranek &copy; - Some rights reserved.</p>
   </footer>
 </template>
 
@@ -15,9 +15,12 @@ export default {
   top: 7.5rem;
   padding: 1.5rem 0;
   position: relative;
-  text-align: center;
-  font-size: 1.92rem;
-  color: var(--color-white);
   background-color: var(--primary-color);
+}
+
+.footer__copyright {
+  font-size: 1.92rem;
+  text-align: center;
+  color: var(--color-white);
 }
 </style>
