@@ -42,6 +42,12 @@ export default {
   margin: 3rem auto 6rem;
 }
 
+@media screen and (max-width: 700px) {
+  .search {
+    max-width: 80%;
+  }
+}
+
 .search__input {
   border: 0;
   width: 100%;
