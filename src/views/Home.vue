@@ -1,6 +1,6 @@
 <template>
   <section class="home">
-    <h1 class="home__heading">👍 Find your desirable product to buy 👎</h1>
+    <h1 class="home__heading">👍 Search for your product 👎</h1>
     <SearchProduct />
     <ProductList />
   </section>
