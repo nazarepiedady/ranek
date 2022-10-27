@@ -26,4 +26,10 @@ export default {
   text-align: center;
   color: var(--secondary-color);
 }
+
+@media screen and (max-width: 600px) {
+  .home__heading {
+    font-size: 2.4rem;
+  }
+}
 </style>
