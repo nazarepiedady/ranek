@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="nav">
+    <nav class="navigation">
       <router-link to="/" class="logo">
         <img src="@/assets/ranek.svg" alt="Ranek Logo" class="logo__img" />
       </router-link>
@@ -31,7 +31,8 @@ export default {
 </script>
 
 <style scoped>
-.nav {
+.navigation {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
