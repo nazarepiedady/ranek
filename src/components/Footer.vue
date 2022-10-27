@@ -23,4 +23,10 @@ export default {
   text-align: center;
   color: var(--color-white);
 }
+
+@media screen and (max-width: 800px) {
+  .footer__copyright {
+    font-size: 1.60rem;
+  }
+}
 </style>
