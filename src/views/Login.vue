@@ -2,14 +2,14 @@
   <section class="login">
     <h1 class="login__heading">Login</h1>
     <form class="form">
-      <label for="email">Email</label>
+      <label class="form__label" for="email">Email</label>
       <input 
         type="email"
         name="email"
         id="email"
         v-model="login.email" />
 
-      <label for="password">Password</label>
+      <label class="form__label" for="password">Password</label>
       <input
         type="password"
         name="password"
@@ -75,6 +75,11 @@ export default {
   font-size: 3.2rem;
   text-align: center;
   color: var(--primary-color);
+}
+
+.form__label {
+  font-weight: bold;
+  margin-bottom: .8rem;
 }
 
 .form__button {
