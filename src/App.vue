@@ -29,8 +29,8 @@ export default {
   --accent-color: #e80;
   --primary-color: #87f;
   --secondary-color: #65d;
-  --basic-shadow: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.2);
-  --basic-shadow--light: 0 0.4rem 0.8rem rgba(30, 60, 90, 0.1);
+  --basic-shadow: 0 0.4rem 0.4rem rgba(30, 60, 90, 0.2);
+  --basic-shadow--light: 0 0.4rem 0.4rem rgba(30, 60, 90, 0.1);
 }
 
 *,
@@ -83,7 +83,7 @@ textarea:hover,
 textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0.6rem 1.2rem rgba(30, 60, 90, 0.2);
+  box-shadow: var(--basic-shadow);
 }
 
 .button {
