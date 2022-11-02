@@ -80,6 +80,7 @@ export default {
 .form__button {
   width: 100%;
   margin: 0 auto;
+  padding: 1.4rem 0;
 }
 
 .forget-password {
