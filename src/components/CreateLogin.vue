@@ -2,7 +2,7 @@
   <section>
     <h2 class="create-heading">Create Your Account</h2>
     <transition mode="out-in">
-      <button v-if="!create" class="button" @click="create = true" key="create">
+      <button v-if="!create" class="button form-button" @click="create = true" key="create">
         Create the Account
       </button>
       <UserForm v-else key="userForm">
@@ -52,5 +52,6 @@ export default {
 
 .form-button {
   max-width: 100%;
+  padding: 1.4rem 0;
 }
 </style>
