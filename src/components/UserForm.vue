@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { mapFields } from "@/helpers.js";
+import { mapFields } from "@/utils";
 
 export default {
   name: "UserForm",
