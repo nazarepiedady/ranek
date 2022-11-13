@@ -18,7 +18,7 @@
               :alt="product.photos[0].name"
               class="product__img"
             />
-            <p class="product__price">{{ product.price | toMoney }}</p>
+            <p class="product__price">{{ getPriceInMoney(product.price) }}</p>
             <h2 class="product__name">{{ product.name }}</h2>
             <p class="product__description">{{ product.description }}</p>
           </router-link>
@@ -44,7 +44,7 @@
 
 <script>
 import { api } from "@/services.js";
-import { serialize } from "@/helpers.js";
+import { serialize, moneyConverter } from "@/utils";
 import ProductPagination from "./ProductPagination.vue";
 
 export default {
@@ -77,6 +77,9 @@ export default {
         });
       }, 1500);
     },
+    getPriceInMoney(price) {
+      return moneyConverter(price)
+    }
   },
   watch: {
     url() {
