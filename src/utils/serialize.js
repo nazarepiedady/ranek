@@ -1,4 +1,4 @@
-export function serialize(object) {
+export default function serialize(object) {
   let finalQuery = '';
 
   for (let key in object) {
