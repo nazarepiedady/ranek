@@ -1,4 +1,4 @@
-export function mapFields(options) {
+export default function mapFields(options) {
   const object = {};
   
   for (let i = 0; i < options.fields.length; i++) {
