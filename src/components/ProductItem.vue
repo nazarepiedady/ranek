@@ -10,7 +10,7 @@
       <p>See the Product</p>
     </router-link>
     <div class="product__info">
-      <p class="product__price">{{ product.price | toMoney }}</p>
+      <p class="product__price">{{ getPriceInMoney(product.price) }}</p>
       <h2 class="product__name">{{ product.name }}</h2>
       <slot></slot>
     </div>
@@ -18,9 +18,16 @@
 </template>
 
 <script>
+import { moneyConverter } from '@/utils'
+
 export default {
   name: "ProductItem",
   props: ["product"],
+  methods: {
+    getPriceInMoney(price) {
+      return moneyConverter(price)
+    }
+  }
 };
 </script>
 
